@@ -1,0 +1,11 @@
+{% extends "master.html" %}
+{% block title %} 
+    Livebeta - beneficiary Details
+{% endblock %}
+{% block content %}
+    <h1>{{beneficiary.firstname}} {{beneficiary.lastname}}</h1>
+    <p>phone: {{beneficiary.phone}}</p>
+    <p>Member since: {{beneficiary.joined_date}}</p>
+
+    <p>Bact to <a href="/beneficiaries">Beneficiaries</a></p>
+{% endblock %}

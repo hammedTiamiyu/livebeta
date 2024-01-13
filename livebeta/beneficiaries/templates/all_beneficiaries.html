@@ -1,0 +1,16 @@
+{% extends "master.html" %}
+
+{% block title %}
+  Livebeta - List of all beneficiaries
+{% endblock %}
+
+
+{% block content %}
+  <h1>beneficiaries</h1>
+  
+  <ul>
+    {% for x in beneficiary_list %}
+      <li><a href="details/{{ x.id }}">{{ x.firstname }} {{ x.lastname }}</a></li>
+    {% endfor %}
+  </ul>
+{% endblock %}
