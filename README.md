@@ -1,3 +1,3 @@
-#LIVEBETA
+# LIVEBETA
 
-##This app is built for the purpose of sourcing and distributing relief materials to the less priviledged
+## This app is built for the purpose of sourcing and distributing relief materials to the less priviledged
