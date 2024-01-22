@@ -26,7 +26,8 @@ def main(request):
 def testing(request):
     beneficiary_list = Beneficiary.objects.values().all()
     # beneficiary_list = Beneficiary.objects.values_list('firstname')
-    template = loader.get_template('template.html')
+    # template = loader.get_template('template.html')
+    template = loader.get_template('myfirst.html')
     context = {
         # 'fruits': ['Apple', 'Banana', 'Cherry'],   
         'beneficiary_list': beneficiary_list

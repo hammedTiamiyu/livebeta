@@ -6,11 +6,12 @@
 
 
 {% block content %}
-  <h1>beneficiaries</h1>
-  
-  <ul>
-    {% for x in beneficiary_list %}
-      <li><a href="details/{{ x.id }}">{{ x.firstname }} {{ x.lastname }}</a></li>
-    {% endfor %}
-  </ul>
+  <div class="mycard">
+    <h1>Beneficiaries</h1>
+    <ul>
+        {% for x in beneficiary_list %}
+        <li onclick="window.location = 'details/{{ x.id }}'">{{ x.firstname }} {{ x.lastname }}</li>
+        {% endfor %}
+    </ul>
+  </div>
 {% endblock %}
